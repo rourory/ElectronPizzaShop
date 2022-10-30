@@ -1,4 +1,11 @@
 {
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   "env": {
     "browser": true,
     "es6": true,
@@ -12,5 +19,8 @@
     "plugin:import/electron",
     "plugin:import/typescript"
   ],
-  "parser": "@typescript-eslint/parser"
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "@typescript-eslint/no-var-requires": 0
+  }
 }

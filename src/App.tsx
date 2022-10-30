@@ -1,5 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Header } from './components/H2Header';
+import ReactDOM from 'react-dom/client';
+import App from './react';
+import './react/scss/app.scss';
 
-ReactDOM.render(<Header />, document.body);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
